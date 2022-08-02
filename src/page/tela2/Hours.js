@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export default function Hours({ days, session }) {
-    console.log(session);
     return (
         <Section>
             <Timebox>
@@ -12,7 +11,7 @@ export default function Hours({ days, session }) {
 
                 <div>
                     {days.showtimes.map((data) => (
-                        <Link to={`/seats/:idSeats `}>
+                        <Link to={`/seats/${data.id} `}>
                             <button>{data.name}</button>
                         </Link>
                     ))}
@@ -54,6 +53,7 @@ const Section = styled.section`
         border-radius: 5px;
         border: none;
         cursor: pointer;
+        color: #ffffff;
     }
 `;
 

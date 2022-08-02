@@ -18,7 +18,6 @@ export default function Session() {
         });
     }, []);
 
-    console.log(session);
     return (
         <Main>
             <h2>Selecione o horário</h2>
@@ -35,7 +34,7 @@ export default function Session() {
 
 const Main = styled.main`
     width: 100%;
-    background-color: #e5e5e5;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
